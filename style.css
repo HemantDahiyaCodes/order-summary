@@ -1,0 +1,130 @@
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+.order-section {
+  width: 25%;
+  height: 80%;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: white;
+}
+
+#img {
+  height: 100%;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+#heading-text {
+  font-size: 1.7rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+
+p {
+  text-align: center;
+  width: 90%;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.music-plan {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+/* Annual plan text styling */
+#annual-plan {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--Dark-blue);
+}
+
+#music-icon {
+  width: 15%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#payment {
+    color: white;
+    background-color: var(--Bright-blue);
+    font-family: "Red Hat Display", sans-serif;
+    padding: 1rem;
+    width: 90%;
+    cursor:pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#cancel {
+    color: var(--Bright-blue);
+    font-family: "Red Hat Display", sans-serif;
+    margin-top: 0.6rem;
+    cursor:pointer;
+    font-weight: 700;
+}
+
+@media (min-width: 400px) and (max-width: 1000px) {
+    .order-section {
+        width: 90%;
+        height: 70%;
+    }
+    
+    .music-plan {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
