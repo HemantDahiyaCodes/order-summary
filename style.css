@@ -131,6 +131,6 @@ button {
 
 @media (min-width: 500px) and (max-width: 1000px) {
   .order-section {
-      width: 100%;
+      width: 90%;
   }
 }
