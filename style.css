@@ -117,7 +117,7 @@ button {
     font-weight: 700;
 }
 
-@media (min-width: 400px) and (max-width: 1000px) {
+@media (min-width: 300px) and (max-width: 1200px) {
     .order-section {
         width: 90%;
         height: 70%;
